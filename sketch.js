@@ -1,5 +1,10 @@
+let slider1;
+
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    fill("black");
-    rect(0, 0, width, height);
+    slider1=createSlider(0, 255);
+}
+
+function draw(){
+    background(slider1.value());
 }
